@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NetworkService_Example' do
+  pod 'NetworkService', :path => '../'
+
+  target 'NetworkService_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
