@@ -45,7 +45,7 @@
 		9A61BD9CB405E31ECAF58876 /* Pods_NetworkService_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkService_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6C9AEF354E4D86EA3DB3A2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C0ACF62944DA06963D7C0297 /* Pods_NetworkService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F944D8251F2E82D1BBBCFD /* NetworkService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NetworkService.podspec; path = ../NetworkService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9F944D8251F2E82D1BBBCFD /* TKNetworkService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TKNetworkService.podspec; path = ../TKNetworkService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CD1C2567F6FE9E4183335BC8 /* Pods-NetworkService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkService_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkService_Tests/Pods-NetworkService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +132,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				C9F944D8251F2E82D1BBBCFD /* NetworkService.podspec */,
+				C9F944D8251F2E82D1BBBCFD /* TKNetworkService.podspec */,
 				BF6C9AEF354E4D86EA3DB3A2 /* README.md */,
 				45B883504F298F70864DE0D4 /* LICENSE */,
 			);

@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
-  s.name             = 'NetworkService'
-  s.version          = '1.0.0'
+  s.name             = 'TKNetworkService'
+  s.module_name      = 'NetworkService'
+  s.version          = '1.0.1'
   s.summary          = 'A simple NetworkService.'
   s.description      = 'A simple NetworkService.'
   s.homepage         = 'https://github.com/TBXark/NetworkService'

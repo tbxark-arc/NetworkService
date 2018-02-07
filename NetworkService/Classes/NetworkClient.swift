@@ -219,10 +219,24 @@ public class NetworkClient {
             .observeOn(MainScheduler.asyncInstance)
     }
     
+    
+    public func netDataRequest(_ type: RequestParameters) -> Observable<Data> {
+        guard let request = createURLRequest(type: type) else {
+            return Observable.error(NSBuildError(code: ClientError.urlError,
+                                                 message: "URL error"))
+        }
+        return sessionManager.rx
+            .request(urlRequest: request)
+            .flatMap({
+                $0.rx.data()
+            })
+    }
+    
     public func netDefaultRequest(_ type: RequestParameters) -> Observable<Any> {
         guard let request = createURLRequest(type: type) else {
             return Observable.error(NSBuildError(code: ClientError.urlError,
-                                                 message: "URL error"))        }
+                                                 message: "URL error"))
+        }
         return sessionManager.rx
             .request(urlRequest: request)
             .flatMap {
