@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.6.0)
+  - NetworkService (1.0.0):
+    - Alamofire (~> 4.5)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+    - TKJsonMapper
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.1)
+  - TKJsonMapper (0.1.1)
+
+DEPENDENCIES:
+  - NetworkService (from `../`)
+
+EXTERNAL SOURCES:
+  NetworkService:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  NetworkService: 5f4b0ff790495e7e636181f8f16a9a19cc6e19f5
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  TKJsonMapper: a04bf88167f8cd2870eb5f4be78e038605e930bf
+
+PODFILE CHECKSUM: ff9251b90f8c2842744619f223c4f05a31c21b8d
+
+COCOAPODS: 1.4.0
