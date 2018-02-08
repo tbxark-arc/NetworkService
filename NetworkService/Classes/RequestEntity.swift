@@ -94,7 +94,7 @@ public struct RequestEntity {
     
     public func addMapBody<T: Codable>(_ map: T?, forKey key: String? = nil) -> RequestEntity {
         guard let m = map,
-            let json = try? NetworkService.jsonEncoder.encode(m),
+            let json = try? JSONShareCoder.jsonEncoder.encode(m),
             let res =  try? JSONSerialization.jsonObject(with: json, options: []),
             let dict = res as? [String: Any]  else { return self}
        

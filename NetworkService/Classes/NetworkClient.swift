@@ -12,7 +12,7 @@ import RxSwift
 import JsonMapper
 
 
-class NetworkService {
+public class JSONShareCoder {
     public static let jsonEncoder = JSONEncoder()
     public static let jsonDecoder = JSONDecoder()
 }
@@ -197,7 +197,7 @@ public class NetworkClient {
             })
             .flatMap({ (response: HTTPURLResponse, data: Data) -> Observable<T> in
                 do {
-                    let model = try NetworkService.jsonDecoder.decode(HTTPResponseModel<T>.self, from: data)
+                    let model = try JSONShareCoder.jsonDecoder.decode(HTTPResponseModel<T>.self, from: data)
 //                    print(model)
                     if let data = model.data {
                         return Observable.just(data)
