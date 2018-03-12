@@ -100,13 +100,7 @@ public class NetworkClient {
     public var configure: NetworkClientConfig
     private weak var requestManager: RequestManager?
     private let networkQueue: OperationQueueScheduler
-    
-    private  let decoder: JSONDecoder = {
-        let jd = JSONDecoder()
-        jd.dateDecodingStrategy = .millisecondsSince1970
-        return jd
-    }()
-
+   
     
     public init(config: NetworkClientConfig) {
         configure = config
